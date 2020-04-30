@@ -12,17 +12,24 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
     <style> 
-        html { 
-            background: url(images_1280x1024/IMG_8255.jpg) no-repeat center fixed; 
-            background-size: cover;
+        html, body {
+          height: 100%;
+          margin: 0;
+          
         }
 
-        body { 
-            color: white; 
+        .full-height-image {
+          background-image: url("images_1280x1024/IMG_8255.jpg");
+          background-color: #cccccc;
+          height: 100%;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          position: relative;
         }
-
         .center {
             background-color: #7e57c2;
+            color: white;
             padding: 20px;
             font-size: 10vw;
             height: auto;
@@ -41,9 +48,11 @@
     </style>
 </head>
 <body>
-    <section id="topMenuBar"></section>
-    <div class="center">
-        <h1>I am Aden Wong</h1>
+    <div class="full-height-image">
+        <section id="topMenuBar"></section>
+        <div class="center">
+            <h1>I am Aden Wong</h1>
+        </div>
     </div>
 <!--    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
         <ul class="navbar-nav">
