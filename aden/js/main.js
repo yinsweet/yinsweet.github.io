@@ -16,4 +16,11 @@ function myNavFunc() {
     } else {
         x.className = "topnav";
     }
+    
+    var icon = document.getElementById("topnavIcon");
+    if (icon.className === "fa fa-bars") {
+        icon.className = "fa fa-close";
+    } else {
+        icon.className = "fa fa-bars";
+    }
 }
