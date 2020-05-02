@@ -1,9 +1,24 @@
 <div class="topnav" id="myTopnav">
     <a href="index.html" class="active">Home</a>
-    <a href="birthday.html">Birthday</a>
-    <a href="gallery1.html">Gallery 1</a>
-    <a href="gallery3.html">Gallery 3</a>
-    <a href="gallery4.html">Gallery 4</a>
+    <div class="mydropdown">
+        <button onclick="location.href = 'feb20.html';" class="dropbtn">Feb20
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="mydropdown-content">
+          <a href="birthday.html">Birthday</a>
+        </div>
+    </div>
+    <div class="mydropdown">
+        <button onclick="location.href = 'mar20.html';" class="dropbtn">Mar20
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="mydropdown-content">
+          <a href="day20.html">Day 20</a>
+          <!-- <a href="fullmoon.html">Full Moon</a> -->
+        </div>
+    </div>
+<!--     <a href="apr20.html">Apr20</a>
+    <a href="may20.html">May20</a> -->
     <a href="javascript:void(0);" class="icon" onclick="myNavFunc()">
         <i id="topnavIcon" class="fa fa-bars"></i>
     </a>
