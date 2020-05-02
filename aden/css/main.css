@@ -4,6 +4,7 @@
 
 .img-thumb {
     height: 380px;
+    vertical-align: top;
 }
 
 .container-odd {
@@ -138,4 +139,3 @@ body {
         text-align: left;
   }
 }
-
