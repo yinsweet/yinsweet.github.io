@@ -88,13 +88,13 @@ body {
 
 /* Add a dark background on topnav links and the mydropdown button on hover */
 .topnav a:hover, .mydropdown:hover .dropbtn {
-  background-color: #555;
+  background-color: purple;
   color: white;
 }
 
 /* Add a grey background to mydropdown links on hover */
 .mydropdown-content a:hover {
-  background-color: #ddd;
+  background-color: #CE93D8;
   color: black;
 }
 
