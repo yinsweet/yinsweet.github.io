@@ -175,3 +175,31 @@ body {
         text-align: left;
   }
 }
+
+.to-top {
+    background: white;
+    position: fixed;
+    bottom: 16px;
+    right:32px;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:32px;
+    color:#1f1f1f;
+    text-decoration: none;
+    opacity:0;
+    pointer-events: none;
+    transition: all .4s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.to-top:hover {
+    text-decoration: none;
+}
+.to-top.active {
+    bottom:32px;
+    pointer-events: auto;
+  opacity:1;
+}
