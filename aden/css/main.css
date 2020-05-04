@@ -1,3 +1,35 @@
+body {
+    margin: 0;
+}
+
+.main-center {
+    background-color: #7e57c2;
+    color: white;
+    padding: 20px;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    transform: skew(20deg, -10deg);
+    transition: width 2s, height 2s, transform 4s;
+    z-index: 1;
+}
+.main-center > h1 {
+    font-size: 3vw;
+}
+.main-center:hover {
+    transform: rotate(20deg);
+}
+
+/* make images fill height and width or clip */
+.carousel-item > img {
+    object-fit: cover;
+    height: calc(100vh - 0px);
+    width: 100%;
+}
+
 .img-link:hover {
     opacity: 0.5;
 }
@@ -22,9 +54,6 @@
 .container-even {
     background-color:#E1BEE7; /* Purple 100 */
     padding:20px;
-}
-body {
-    margin: 0;
 }
 
 .topnav {
