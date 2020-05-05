@@ -2,10 +2,6 @@ body {
     margin: 0;
 }
 
-h1 {
-    margin-top: 0.5rem;
-}
-
 .main-center {
     background-color: #7e57c2;
     color: white;
@@ -68,9 +64,20 @@ img.center {
     padding:20px;
 }
 
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none; /* Safari */
+            -khtml-user-select: none; /* Konqueror HTML */
+                -moz-user-select: none; /* Firefox */
+                    -ms-user-select: none; /* Internet Explorer/Edge */
+                        user-select: none; /* Non-prefixed version, currently
+                                            supported by Chrome and Opera */
+}
+
 .topnav {
-    overflow: hidden;
     background-color: #333;
+    display: flex;
+    position: relative;
 }
 
 .topnav a {
@@ -97,66 +104,69 @@ img.center {
     display: none;
 }
 
-/* Dropdown container - needed to position the dropdown content */
-.mydropdown {
-  float: left;
-  overflow: hidden;
-}
-
 /* Style the mydropdown button to fit inside the topnav */
 .mydropdown .dropbtn {
-  font-size: 17px;
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
 }
 
 /* Style the mydropdown content (hidden by default) */
 .mydropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 9;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 9;
 }
 
 /* Style the links inside the mydropdown */
 .mydropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
 }
 
 /* Add a dark background on topnav links and the mydropdown button on hover */
 .topnav a:hover, .mydropdown:hover .dropbtn {
-  background-color: purple;
-  color: white;
+    background-color: purple;
+    color: white;
 }
 
 /* Add a grey background to mydropdown links on hover */
 .mydropdown-content a:hover {
-  background-color: #CE93D8;
-  color: black;
+    background-color: #CE93D8;
+    color: black;
 }
 
 /* Show the mydropdown menu when the user moves the mouse over the mydropdown button */
 .mydropdown:hover .mydropdown-content {
-  display: block;
+    display: block;
 }
 
 @media screen and (max-width: 576px) {
+    .topnav {display: block;}
     .topnav a:not(:first-child), .mydropdown .dropbtn {display: none;}
+    .topnav a:first-child {
+        width: 100%;
+        text-align: left;
+    }
     .topnav a.icon {
-        float: right;
+        background: #333;
         display: block;
+        z-index: 2;
+        position: absolute;
+        right: 0;
+        top: 0;
     }
 }
 
