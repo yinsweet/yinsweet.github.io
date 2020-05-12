@@ -79,6 +79,31 @@ img.center {
     padding:20px;
 }
 
+.container-mycard {
+    width: 100%;
+    height: 450px;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    white-space: nowrap;
+    margin: 0;
+    position: absolute;
+    top: 25%;
+}
+
+@media screen and (max-width: 576px) {
+    .container-mycard {
+        height: 100%;
+    }
+}
+.mycard {
+    background-color: #fff;
+    border: 1px solid lightgrey;
+    border-radius: 0.25rem;
+    display: inline-block;
+    margin: 1px;
+    vertical-align: middle;
+}
+
 .noselect {
     -webkit-touch-callout: none; /* iOS Safari */
         -webkit-user-select: none; /* Safari */
