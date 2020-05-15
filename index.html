@@ -8,8 +8,9 @@
     .image {
         display: block;
         margin: 0 auto;
+        width: 100%;
     }
-    .center {
+    .sub-container {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -52,8 +53,9 @@
         .image {
             display: inline-block;.
             float: left;
+            width: unset;
         }
-        .center {
+        .sub-container {
             display: inline-block;
             vertical-align: middle;
             float: left;
@@ -65,7 +67,7 @@
     <div class="container">
         <img class="image" src="images/iamyinsweet.jpg" alt="I am Yin Sweet">
         <img class="image" src="images/FEWD.jpg" alt="Front End Web Developer">
-        <div class="center">
+        <div class="sub-container">
             <button type="button" class="hireme" onclick="location.href = 'mailto:yinsweet@gmail.com';">Hire<br/>me</button>
         </div>
     </div>
