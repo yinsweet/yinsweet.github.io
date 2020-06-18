@@ -110,13 +110,12 @@ h1, h2, h3, h4, h5, h6 {
 
 @media only screen and (orientation : landscape) {
   div#fb1 > div > div {
+    -ms-flex-direction: row !important;
     flex-direction: row !important;
   }
   .profile-pic {
     width:20vh;
     height:20vh;
-    border-radius: 50%;
-    object-fit: cover;
   }
   .so-img {
     height: -webkit-fill-available;
